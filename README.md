@@ -1,5 +1,11 @@
 # Angular Starter
-This Repo can be used as Angular starter and shows basic content-organization. First start a Angular Project with routing and scss. See file-structure for inputs on organization.
+This Repo can be used as Angular starter and shows basic content-organization. First start a Angular Project with routing and scss.
+
+- Angular CLI
+- Angular Material
+- Bootstrap
+- Normalize SCSS
+- Global SCSS Organisation
 
 ![Screenshot](src/assets/images/screenshot.png)
 
@@ -11,10 +17,10 @@ npm install
 ng serve
 ```
 
-##### Setup Documentation
+### Setup Documentation
 For Details on the Setup regarding Sass, Normalize, Bootstrap click here. [Installation Config Documentation](docs/setup.md)
 
-##### Structure of Project
+###Structure of Project
 ```
 
 ├── app
