@@ -78,6 +78,66 @@ If needed: Install Angular Material
 npm install --save @angular/material @angular/cdk @angular/animations
 ```
 
+##### Structure of Project
+```
+
+├── app
+│   ├── app-routing.module.ts
+│   ├── app.component.html
+│   ├── app.component.scss
+│   ├── app.component.spec.ts
+│   ├── app.component.ts
+│   ├── app.module.ts
+│   ├── layout
+│   │   ├── layout.component.html
+│   │   ├── layout.component.sass
+│   │   ├── layout.component.spec.ts
+│   │   └── layout.component.ts
+│   ├── material.module.ts
+│   ├── pages
+│   │   ├── about
+│   │   │   ├── about.component.html
+│   │   │   ├── about.component.sass
+│   │   │   ├── about.component.spec.ts
+│   │   │   └── about.component.ts
+│   │   └── landing
+│   │       ├── landing.component.html
+│   │       ├── landing.component.sass
+│   │       ├── landing.component.spec.ts
+│   │       └── landing.component.ts
+│   └── shared
+│       ├── footer
+│       │   ├── footer.component.html
+│       │   ├── footer.component.sass
+│       │   ├── footer.component.spec.ts
+│       │   └── footer.component.ts
+│       └── navigation
+│           ├── navigation.component.html
+│           ├── navigation.component.sass
+│           ├── navigation.component.spec.ts
+│           └── navigation.component.ts
+├── assets
+│   └── images
+├── browserslist
+├── environments
+│   ├── environment.prod.ts
+│   └── environment.ts
+├── favicon.ico
+├── index.html
+├── karma.conf.js
+├── main.ts
+├── polyfills.ts
+├── styles
+│   ├── _mixins.scss
+│   ├── _variables.scss
+│   ├── fonts.scss
+│   ├── general.scss
+│   └── styles.scss
+├── test.ts
+├── tsconfig.app.json
+├── tsconfig.spec.json
+└── tslint.json
+```
 ## Angular Documentation
 
 - Dev Server: Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
