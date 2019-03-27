@@ -72,6 +72,11 @@ If Grid Support is needed place at top of app.component.scss
 /* autoprefixer grid: no-autoplace */
 ```
 
+##### Install Angular Material
+If needed: Install Angular Material
+```
+npm install --save @angular/material @angular/cdk @angular/animations
+```
 
 ## Angular Documentation
 
