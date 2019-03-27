@@ -1,27 +1,88 @@
 # AngularBootstrap
+This Repo can be used as Angular starter and shows basic content-organization. First start a Angular Project with routing and scss. See file-structure for inputs on organization.
+```
+ng new angular-starter
+cd angular-starter
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+### Installation
+##### Setup Styles Dir
+Move styles.scss in directory 'src/styles' and use as entry point. Also create:
+- src/styles/_variables.scss
+- src/styles/_mixins.scss
+- src/styles/fonts.scss
+- src/styles/general.scss
 
-## Development server
+##### Install Bootstrap, Font-Awesome, Normalize SCSS
+```
+npm install bootstrap font-awesome normalize-scss
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+##### Set Paths in Angular.js
+Set Paths in Angular.js
+```
+"architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            ...
+            "styles": [
+              "src/styles/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/styles",
+                "./node_modules/normalize-scss/sass"
+              ]
+            },
+            ...
+          },
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##### Include Packages 
+```
+//styles.scss
 
-## Build
+//Import Bootstrap and Font-Awesome
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+//Normalize SCSS
+@import "normalize";
+@include normalize();
 
-## Running unit tests
+//Import Files
+@import'general';
+@import 'fonts';
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+The Mixins and Variables need to be imported to every component
+```
+//app.component.scss
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+@import "variables";
+@import "mixins";
+```
 
-## Further help
+##### Add Grid-Support for Autoprefixer
+Place at top of app.component.scss
+```
+/* autoprefixer grid: no-autoplace */
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Angular Documentation
+
+- Dev Server: Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+- Generate Component: Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+- Build Project: Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+- Run Unit Tests: Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+- Run End to End Tests: Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+- Further help: To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

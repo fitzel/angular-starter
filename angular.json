@@ -27,8 +27,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/styles",
+                "./node_modules/normalize-scss/sass"
+              ]
+            },
             "scripts": [],
             "es5BrowserSupport": true
           },

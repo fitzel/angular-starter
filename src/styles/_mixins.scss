@@ -1,0 +1,35 @@
+//Mixins Example
+// TODO Remove Example
+$tablet-width: 950px;
+$phone-width: 550px;
+
+//Media Queries
+@mixin desktop(){
+  @media (min-width: #{$tablet-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-desktop(){
+  @media (min-width: #{$phone-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet(){
+  @media (min-width: #{$phone-width + 1px}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin phone-tablet(){
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin phone(){
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
