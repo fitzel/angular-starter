@@ -3,12 +3,14 @@ This Repo can be used as Angular starter and shows basic content-organization. F
 
 ![alt text](src/assets/images/screenshot.png)
 
+### Quickstart
 ```
-ng new angular-starter
-cd angular-starter
+git clone git@github.com:fabiankuhn/angular-starter.git
+npm install
+ng serve
 ```
 
-### Installation
+### Included Setup
 ##### Setup Styles Dir
 Move styles.scss in directory 'src/styles' and use as entry point. Also create:
 - src/styles/_variables.scss
