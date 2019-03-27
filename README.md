@@ -12,8 +12,7 @@ ng serve
 ```
 
 ##### Setup Documentation
-For Details on the Setup regarding Sass, Normalize, Bootstrap click here.
-![Installation](docs/setup.md)
+For Details on the Setup regarding Sass, Normalize, Bootstrap click here. [a relative link](docs/setup.md)
 
 ##### Structure of Project
 ```
