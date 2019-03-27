@@ -1,7 +1,7 @@
 # Angular Starter
 This Repo can be used as Angular starter and shows basic content-organization. First start a Angular Project with routing and scss. See file-structure for inputs on organization.
 
-![alt text](src/assets/images/screenshot1.png)
+![alt text](src/assets/images/screenshot.png)
 
 ```
 ng new angular-starter
