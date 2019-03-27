@@ -67,7 +67,7 @@ The Mixins and Variables need to be imported to every component
 ```
 
 ##### Add Grid-Support for Autoprefixer
-Place at top of app.component.scss
+If Grid Support is needed place at top of app.component.scss
 ```
 /* autoprefixer grid: no-autoplace */
 ```
