@@ -6,6 +6,7 @@ This Repo can be used as Angular starter and shows basic content-organization. F
 ### Quickstart
 ```
 git clone git@github.com:fabiankuhn/angular-starter.git
+cd angular-starter
 npm install
 ng serve
 ```
